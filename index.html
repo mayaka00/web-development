@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Admission</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the School Admission Portal</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li>
+                    <a href="#">Admissions</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Undergraduate</a></li>
+                        <li><a href="#">Graduate</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Create an Account</h2>
+            <form id="registerForm">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                
+                <button type="submit">Register</button>
+            </form>
+
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="loginUsername">Username</label>
+                <input type="text" id="loginUsername" name="loginUsername" required>
+                
+                <label for="loginPassword">Password</label>
+                <input type="password" id="loginPassword" name="loginPassword" required>
+                
+                <button type="submit">Login</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 School Admission. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
